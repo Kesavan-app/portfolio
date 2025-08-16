@@ -700,3 +700,18 @@ footer p {
     font-weight: 500;
   }
 }
+
+/* ✅ Fix for buttons on small screens */
+@media (max-width: 400px) {
+  .buttons {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center them */
+    gap: 15px; /* space between buttons */
+  }
+
+  .buttons button {
+    width: 80%; /* make them equal size */
+    max-width: 250px;
+  }
+}

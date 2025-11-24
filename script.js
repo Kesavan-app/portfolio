@@ -42,13 +42,13 @@ function handleDownload() {
   }
 }
 
-// Get the current year
+// Attach click event in normal JS
+document.getElementById("downloadBtn").addEventListener("click", handleDownload);
+
+  // Get the current year
 const currentYear = new Date().getFullYear();
 // Set it inside the span
 document.getElementById("year").textContent = currentYear;
-
-// Attach click event in normal JS
-document.getElementById("downloadBtn").addEventListener("click", handleDownload);
 
 /* ===== ✅ Hamburger Menu Script ===== */
 document.addEventListener("DOMContentLoaded", function () {

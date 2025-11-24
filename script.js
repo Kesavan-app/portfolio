@@ -42,6 +42,11 @@ function handleDownload() {
   }
 }
 
+// Get the current year
+const currentYear = new Date().getFullYear();
+// Set it inside the span
+document.getElementById("year").textContent = currentYear;
+
 // Attach click event in normal JS
 document.getElementById("downloadBtn").addEventListener("click", handleDownload);
 
